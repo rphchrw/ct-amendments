@@ -1,1 +1,56 @@
+name: CT Amendment Tracker
 
+on:
+  schedule:
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  check-amendments:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (for Claude Code CLI)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Claude agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: '587'
+        run: |
+          claude -p \
+            "You are the CT Amendment Tracker agent. Follow the instructions in CLAUDE.md exactly. Today is $(date '+%Y-%m-%d')." \
+            --allowedTools "Bash(curl *),Bash(python3 *),Read,Write" \
+            --max-turns 20 \
+            --max-budget-usd 0.15
+
+      - name: Commit updated snapshots
+        run: |
+          git config user.name  "CT Amendment Bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update amendment snapshots $(date '+%Y-%m-%d')"
+            git push
+          else
+            echo "No snapshot changes — skipping commit."
+          fi
