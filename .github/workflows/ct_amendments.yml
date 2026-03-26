@@ -40,8 +40,8 @@ jobs:
           claude -p \
             "You are the CT Amendment Tracker agent. Follow the instructions in CLAUDE.md exactly. Today is $(date '+%Y-%m-%d')." \
             --allowedTools "Bash(curl *),Bash(python3 *),Read,Write" \
-            --max-turns 20 \
-            --max-budget-usd 0.15
+            --max-turns 30 \
+            --max-budget-usd 0.50
 
       - name: Commit updated snapshots
         run: |
