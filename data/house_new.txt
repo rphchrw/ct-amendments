@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="google-site-verification" content="ZUpOL3ix6HBkn3JX_OXCFFTqzCPeK0cmrgHD2INMpN0">
+  <meta name="google-translate-customization" content="3e64bc32cc67ff52-207d72c413066341-g34255b4647b2c888-15">
+  <!--FOR FACEBOOK-->
+  <meta property="fb:admins" content="Connecticut General Assembly">
+  <meta property="og:title" content="Connecticut General Assembly">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cga.ct.gov">
+  <meta property="og:site_name" content="Connecticut General Assembly">
+  <meta name="description" content="The Connecticut General Assembly 2026 Regular Session convenes February 4th, 2026 and adjourns May 6th, 2026"><!--formatted-->
+  <!--END FACEBOOK METAS-->
+  
+  <title>C G A - Connecticut General Assembly</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="/basin/css/app.css?v=4.2">
+  <link rel="stylesheet" href="/basin/css/cga-style.css?v=1.2">
+  
+  <script src="/basin/js/vendor/jquery-1.12.4.js?v=1"></script>
+  <script src="/basin/js/vendor/responsive-iframes.js?v=1"></script>
+  <script src="/basin/js/vendor/modernizr.js?v=1"></script>
+  <script src="/basin/js/vendor/jetmenu.js?v=1"></script>
+
+  <!--FULLCALENDAR-->
+  <script src='/basin/fullcalendar/fullcalendar.js?v=1'></script>
+  <script src='/basin/fullcalendar/cgacal.js?v=41834.57'></script>
+  <script src="/basin/js/vendor/jquery-ui.js?v=1"></script>
+
+  <!--LOADING GIF FOR SUBMIT BTN / Add submitButton class to <button> or <a>-->   
+  <script type='text/javascript'>
+    $(function() {
+      $(".submitButton").click(function() {
+      $("i", this).attr("class", "icon-refresh icon-spin");
+        setTimeout(function() { $(".submitButton i").attr("class", "fa fa-search"); }, 4000);
+      });
+    });
+  </script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPZCK4N6VH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XPZCK4N6VH');
+  </script>
+  
+</head>
+
+<body>
+
+<!--LOADING GIF CALL-->
+<div class="se-pre-con"></div>
+
+<!--NAVIGATION MENU-->
+<!-- WHEN ADJUSTING TRANSITION VIEWPORTS, SEE THIS FILE, _MENU.SCSS, _CUSTOM-SETTINGS.SCSS, _TOPBAR.SCSS, JETMENU.JS -->
+<header id="target" role="banner">
+    <div class="header row">
+        <div class="logo small-12 medium-10 large-8 columns">
+                <a href="/default.asp" class="logo-cga">
+                    <img src="/basin/img/Official_Logo_md135.png" alt="Connecticut General Assembly" class="hide-for-print">
+                </a>
+                <div class="logo-txt">
+                    <a href="/default.asp"><span class="logo-txt-head">Connecticut General Assembly</span></a>
+                    <span class="logo-sub">State Capitol | Hartford, Connecticut 06106-1562</span>
+                </div>
+        </div>
+        <div class="head-functions hide-for-small medium-2 large-4 columns">
+            <div class="head-tools row">
+                <div class="head-links medium-12 large-12 columns">
+                    <ul class="medium-block-grid-1 large-block-grid-2">
+                        <li>
+                            <a href="#" class="nowrap js-open-qs-slider" title="Quick Bill Search" role="button">
+                                <i class="fa fa-search" aria-hidden='true'></i><span class="show-for-large-up">Quick </span>Bill Search
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.governmentjobs.com/Careers/CGA" target="_blank" class="nowrap">
+                                <i class="fa fa-users" aria-hidden='true'></i>Employment
+                            </a>
+                        </li>
+                        <li class="hide-for-large-up">
+                            <a href="/asp/menu/cgasearches.asp" class="nowrap">
+                                <i class="fa fa-search" aria-hidden="true"></i>Search Index
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head-search row show-for-large-up hide-for-print">
+                <ul class="">
+                    <li><a href="../../asp/menu/cgasearches.asp">Search Index</a></li>
+                    <li><a href="../../asp/content/terms.asp">Glossary</a></li>
+                    <li class="clockbox">&nbsp;</li>
+                </ul>
+                <div class="show-for-large-up large-12 columns">
+                    <form class="header-search-form" action="/searchresults.asp" id="cse-search-box1" name="cse-search-box1">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <input type="text" class="rounded" placeholder="SITE SEARCH" name="q" title="srch-term" value="">
+                            </div>
+                            <div class="large-3 columns">
+                                <input type="submit" value="&#xf002;" id="submit" class="postfix" onclick="document.cse - search - box1.submit();">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="row hide-for-print" aria-label="Main menu" id="nav">
+        <ul id="jetmenu" class="jetmenu blue jetright hide-for-print">
+            <!--SEARCH-->
+            <li class="jetform">
+                <script type="text/javascript">
+                    $('.searchButton').on('click', function () {
+                        alert('Legislative Site Search');
+                    });
+                </script>
+                <form action="/searchresults.asp" id="cse-search-box2" name="cse-search-box2" class="hide-for-large-up hide-for-print search">
+                    <input type="text" class="searchTerm" name="q" title="srch-term" placeholder="SITE SEARCH" value="">
+                    <input class="searchButton" type="submit">
+                </form>
+            </li>
+
+            <!--REPRESENTATION-->
+            <li class="largeleft left jetleft"><a href="#" role="button">Representation <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6><a href="/asp/menu/cgafindleg.asp">Find Your Legislators</a></h6>
+                                </li>
+                                <li class="title">
+                                    <h6><a href="/asp/content/congress.asp">Congressional Representation</a></h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6><a href="/asp/menu/house.asp">House</a></h6>
+                                </li>
+                                <li><a href="/asp/menu/hlist.asp">House Members List</a></li>
+                                <li><a href="http://www.housedems.ct.gov/">House Democratic Caucus</a></li>
+                                <li><a href="http://cthousegop.com/">House Republican Caucus</span></a></li>
+                                <li><a href="/hco/">House Clerk</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6><a href="/asp/menu/senate.asp">Senate</a></h6>
+                                </li>
+                                <li><a href="/asp/menu/slist.asp">Senate Members List</a></li>
+                                <li><a href="http://www.senatedems.ct.gov/">Senate Democratic Caucus</a></li>
+                                <li><a href="http://ctsenaterepublicans.com/">Senate Republican Caucus</a></li>
+                                <li><a href="/sco/">Senate Clerk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--COMMITTEES-->
+            <li class="left jetleft"><a href="#" role="button">Committees <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <!--COMMITTEES LARGE-->
+                    <div class="jetrow">
+                        <div class="col2">
+                            <ul>
+                                <li class="title show-for-large-up"><h6>A - E</h6></li>
+                                <li><a href="/age/">Aging</a></li>
+                                <li><a href="/app/">Appropriations</a></li>
+                                <li><a href="/ba/">Banking</a></li>
+                                <li><a href="/kid/">Children</a></li>
+                                <li><a href="/ce/">Commerce</a></li>
+                                <li><a href="/ed/">Education</a></li>
+                                <li><a href="/et/">Energy and Technology</a></li>
+                                <li><a href="/env/">Environment</a></li>
+                                <li><a href="/exn/">Executive and Legislative Nominations</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title show-for-large-up"><h6>F - J</h6></li>
+                                <li><a href="/fin/">Finance, Revenue and Bonding</a></li>
+                                <li><a href="/gl/">General Law</a></li>
+                                <li><a href="/gae/">Government Administration and Elections</a></li>
+                                <li><a href="/gos/">Government Oversight</a></li>
+                                <li><a href="/hed/">Higher Education and Employment</a></li>
+                                <li><a href="/hsg/">Housing</a></li>
+                                <li><a href="/hs/">Human Services</a></li>
+                                <li><a href="/ins/">Insurance and Real Estate</a></li>
+                                <li><a href="/isc/internship.asp">Internship</a></li>
+                                <li><a href="/jud/">Judiciary</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title show-for-large-up"><h6>L - V</h6></li>
+                                <li><a href="/lab/">Labor and Public Employees</a></li>
+                                <li><a href="/lm/">Legislative Management</a></li>
+                                <li><a href="/pd/">Planning and Development</a></li>
+                                <li><a href="/ph/">Public Health</a></li>
+                                <li><a href="/ps/">Public Safety and Security</a></li>
+                                <li><a href="/red/">Reapportionment Commission</a></li>
+                                <li><a href="/rr/">Regulation Review</a></li>
+                                <li><a href="/tra/">Transportation</a></li>
+                                <li><a href="/va/">Veterans' and Military Affairs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--OFFICES FILES-->
+            <li class="left jetleft"><a href="#" role="button">Offices <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col2">
+                            <ul>
+                                <li><a href="/ofa/">Fiscal Analysis</a></li>
+                                <li><a href="/its/">Information Technology Services</a></li>
+                                <li><a href="/lco/">Legislative Commissioners</a></li>                                
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li><a href="/isc/future.asp">Legislative Internship Program</a></li>
+                                <li><a href="https://wp.cga.ct.gov/lib/">Legislative Library</a></li>
+                                <li><a href="/olm/">Legislative Management</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li><a href="/olr/">Legislative Research</a></li>                                
+                                <li><a href="/cop/">State Capitol Police</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--COMMISSIONS FILES-->
+            <li class="left jetleft"><a href="#" role="button">Commissions <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col3">
+                            <ul>
+                                <li><a href="https://wp.cga.ct.gov/creph/">Commission on Racial Equity in Public Health</a></li>
+                                <li><a href="https://wp.cga.ct.gov/cwcseo/">Commission on Women, Children, Seniors, Equity &amp; Opportunity</a></li>
+                                <li><a href="/lm/taskforce.asp?TF=20190313_Commission on Uniform Legislation">Commission On Uniform Legislation</a></li>                                   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--SESSION FILES-->
+            <li class="left jetleft"><a href="#" role="button">Session Items <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col1-5">
+                            <ul>
+                                <li class="title">
+                                    <h6>General</h6>
+                                </li>
+                                <li><a href="/olm/lbd/docs/support/forms/BillBoxApplication.pdf">Bill Box Application (pdf)</a></li>
+                                <li><a href="/asp/menu/Clerkdoclist.asp?house=X&doc_type=bul">Bulletins</a></li>
+                                <li><a href="/asp/Content/aearchives.asp">Legislation Effective Dates</a></li>
+                                <li><a href="/asp/menu/legdownload.asp">Legislative Info Download</a></li>
+                                <li><a href="/2026/bul/SupDoc/leadership.htm">Leadership and Reference</a></li>
+                                <li><a href="/olr/Majorissues.asp">Major Issues</a></li>
+                                <li><a href="/asp/menu/rules.asp">Session Rules</a></li>
+                                <li><a href="/calsession.asp?sDate=2025-01-08&eDate=2025-06-04">Session Schedule</a></li>
+                            </ul>
+                        </div>
+                        <div class="col1-5">
+                            <ul>
+                                <li class="title">
+                                    <h6>Committee</h6>
+                                </li>
+                                <li><a href="/2026/bul/SupDoc/commassignment.htm">Assignments</a></li>
+                                <li><a href="/lco/docs/Committee%20Deadlines%20Chart.pdf">Deadlines</a></li>
+                                <li><a href="/asp/menu/archived-committees.asp">Archived Committees</a></li>
+                            </ul>
+                        </div>
+                        <div class="col1-5">
+                            <ul>
+                                <li class="title">
+                                    <h6>House</h6>
+                                </li>
+                                <li><a href="/asp/menu/Clerkdoclist.asp?house=H&doc_type=cln">Calendars</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=H&doc_type=jnl">Journals</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=H&doc_type=lob">List of Bills</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=H&doc_type=trn">Transcripts</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=H&doc_type=gol">Go Lists</a></li>
+                            </ul>
+                        </div>
+                        <div class="col1-5">
+                            <ul>
+                                <li class="title">
+                                    <h6>Senate</h6>
+                                </li>
+                                <li><a href="/asp/menu/ClerkDocList.asp?house=S&doc_type=cln">Calendars</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=S&doc_type=jnl">Journals</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=S&doc_type=lob">List of Bills</a></li>
+                                <li><a href="/asp/menu/clerkdoclist.asp?house=S&doc_type=trn">Transcripts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col1-5">
+                            <ul>
+                                <li class="title">
+                                    <h6>Session</h6>
+                                </li>
+                                <li><a href="/ofa/add-fiscalnotes4.asp">Fiscal Note Compilation</a></li>
+                                <li><a href="/olr/majoracts.asp">Major Public Acts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--STATUTES-->
+            <li class="left jetleft"><a href="#" role="button">Statutes <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6>Indexes / Reference Tables</h6>
+                                </li>
+                                <li><a href="/lco/statutes-index.asp">Statute Index</a></li>
+                                <li><a href="/lco/statutes-supplement.asp">Supplement Index</a></li>
+                                <li><a href="/lco/statutes-actsref.asp">Reference Tables</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6>Browse / Search</h6>
+                                </li>
+                                <li><a href="/current/pub/titles.htm?ver=25">Browse Statutes</a></li>
+                                <li><a href="/2026/sup/titles.htm">Browse 2026 Supplement</a></li>
+                                <li><a href="https://search.cga.state.ct.us/r/statute/">Search Statutes</a></li>
+                                <li><a href="/asp/Content/constitutions.asp">Constitutions / Historical References</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6><a href="/lco/statutes-about.asp">About CT Statutes</a></h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--BILL INFO-->
+            <li class="left jetleft"><a href="#" role="button">Bill Info <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6>Find</h6>
+                                </li>
+                                <li><a href="/asp/CGABillInfo/CGABillInfoRequest.asp">Bill Information Search</a></li>
+                                <li><a href="#" class="js-open-qs-slider">Quick Bill Search (by number)</a></li>
+                                <li><a href="/asp/cgasubjectsearch/default.asp">Bills by Subject</a></li>
+                                <li><a href="/asp/menu/cgabilltracking.asp">Bill Tracking</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6>List</h6>
+                                </li>
+                                <li><a href="/asp/CGATodayFileCopies/CGAAllFC1.asp">File Copies</a></li>
+                                <li><a href="/asp/CGATodayFileCopies/CGAAllPA.asp">Public and Special Acts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li class="title">
+                                    <h6>Search</h6>
+                                </li>
+                                <li><a href="https://search.cga.state.ct.us/r/adv/">Advanced Bill and Document Search</a></li>
+                                <li><a href="https://search.cga.state.ct.us/r/basic/">Basic Bill and Document Search</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--ASSOCIATED FILES-->
+            <li class="left jetleft"><a href="#" role="button">Associated <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col2">
+                            <ul>
+                                <li><a href="/ph/taskforce.asp?TF=20200311_Public%20Health%20Emergency%20Committee">Public Health Emergency Committee</a></li>
+                                <li><a href="/red/">2021 Redistricting Project</a></li>
+                                <li><a href="https://ctstatelibrary.org/">Connecticut State Library</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li><a href="/ccdc/">Capitol Child Development Center</a></li>
+                                <li><a href="/cprc/">State Capitol Preservation</a></li>
+                                <li><a href="https://eregulations.ct.gov/eRegsPortal/Browse/RCSA">State Regulations</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <ul>
+                                <li><a href="https://ct-n.com">Connecticut Network (CT&#8209;N)</a></li>
+                                <li><a href="/osh">Connecticut's Old State House</a></li>
+                                <li><a href="/hof">Connecticut Hall of Fame</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="left jetleft">
+                <a href="https://wp.cga.ct.gov/apa/">State Auditors &#x25BA;</a>
+            </li>
+
+            <li class="left jetleft"><a href="#" role="button">Accessibility <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu left">
+                    <div class="jetrow">
+                        <div class="col12">
+                            <ul>
+                                <li><a href="/asp/content/accessibility_planning_your_visit.asp">Planning Your Visit</a></li>
+                                <li><a href="/asp/content/accessibility_request_assistance.asp">Request Assistance</a></li>
+                                <li><a href="/asp/content/accessibility_completed_improvements.asp">Completed Improvements</a></li>
+                                <li><a href="/asp/content/accessibility_planned_improvements.asp">Planned Improvements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--MOBILE APPS-->
+            <li class="left jetleft">
+                <a href="#" class=" show-for-touch hide-for-large-up">Mobile Web Apps <span class="downarrow">&#x25BC;</span></a>
+                <div class="megamenu full-width">
+                    <div class="jetrow">
+                        <div class="col1">
+                            <ul>
+                                <li class="title">
+                                    <h6><a href="/asp/menu/cgawebapps.asp">CGA Mobile Web Apps</a></h6>
+                                </li>
+                                <li><a href="/webapps/cgaquicksearch.asp">Bill Quick Search</a></li>
+                                <li><a href="/webapps/cgafyl.asp">Find Your Legislator</a></li>
+                                <li><a href="/webapps/cgaevents.asp">Schedule of Events</a></li>
+                                <li><a href="https://search.cga.state.ct.us/webapps/statute/">Statute Search</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!--WRAPPER-->
+<!--CLOSING TAG IN footer-combined--> 
+<div class="row wrapper">
+  <!--GRID-->
+  <!--CLOSING TAG IN footer-combined-->
+  <div class="large-12 columns">
+    <!--CONTAINER-->
+    <!--CLOSING TAG IN footer-combined-->
+    <div class="container" role="main">
+      <!--CLOSING TAG IN footer-combined-->
+      <div class="minheight">
+        <!--OUTDATED BROWSER CALL-->
+        <div id="outdated"></div>
+
+<style>
+ table a:visited {color:maroon !important;}
+</style>
+
+
+
+<Head>
+    <TITLE>House Amendment Receipt Report</TITLE>
+</Head>
+
+
+<!--Close Header Tags-->
+            <!--Min Height-->
+            </div>
+        <!--Container-->
+        </div>
+    <!--Large-12 Columns-->
+    </div>
+<!--Row Wrapper-->
+</div>
+
+<footer id="footer" class="row">
+    <div class="row">
+        <div class="small-12 columns cap-address">
+            <div class="row show-for-small">
+                <div class="small-12 columns text-center">
+                    <h4>Connecticut General Assembly</h4>
+                    <p>State Capitol | Hartford, CT 06106</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-12 large-5 columns show-for-medium-up text-center">
+                    <em>State Capitol</em> | 210 Capitol Avenue | Hartford, CT  06106
+                </div>
+                <div class="large-2 columns show-for-large-up hide-for-print text-center">
+                    <a href="tel:18602400100">(860)-240-0100</a>
+                </div>
+                <div class="medium-12 large-5 columns show-for-medium-up text-center">
+                    <em>Legislative Office Building</em> | 300 Capitol Avenue | Hartford, CT  06106
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <ul class="foot-links small-block-grid-2 medium-block-grid-2 large-block-grid-4 cap-links">
+                <li><a href="/asp/menu/hlist.asp"><i class="fa fi-torsos" aria-hidden='true'></i></span> House Members List</a></li>
+                <li><a href="/asp/menu/slist.asp"><i class="fa fi-torsos" aria-hidden='true'></i> Senate Members List</a></li>
+                <li><a href="/asp/menu/cgafindleg.asp"><i class="fa fi-magnifying-glass" aria-hidden='true'></i> Find Your Legislators</a></li>
+                <li><a href="https://www.governmentjobs.com/Careers/CGA" target="_blank"><i class="fa fi-torsos" aria-hidden='true'></i> Employment</a></li>
+                <li><a href="https://my.lwv.org/connecticut/capitol-information-and-tours" target="_blank"><i class="fa fa-binoculars" aria-hidden='true'></i> State Capitol Tours</a></li>
+                <li><a href="/cop/"><i class="fa fi-sheriff-badge" aria-hidden='true'></i> State Capitol Police</a></li>
+                <li></li>
+                <li><a href="/asp/menu/capitol-directions.asp"><i class="fa fa-map" aria-hidden="true"></i> Directions to the Capitol</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row base">
+        <div class="medium-12 large-8 columns">
+            <ul class="no-bullet inline-list left">
+                <li><a href="/default.asp">&copy; <script>
+                    now = new Date
+                    theYear = now.getFullYear()
+                    document.write(theYear)
+                </script> Connecticut General Assembly</a></li>
+                <li><a href="/asp/menu/sitemap.asp">Site Map</a></li>
+                <li><a href="/asp/menu/disclaimer.asp">Disclaimer</a></li>
+                <li><a href="/asp/menu/privpolicy.asp">Privacy Policy</a></li>
+                <li><a href="/asp/menu/externallinks.asp">Links</a></li>
+                <li><a href="mailto:webmaster@cga.ct.gov"><i class="fa fa-envelope-o" aria-hidden='true'></i> Webmaster</a></li>
+            </ul>
+        </div>
+        <div class="medium-12 large-4 columns">
+            <ul class="small-block-grid-3">
+                <li><a href="https://ct-n.com"><img src="/basin/img/ico/ctn_logo_35x35.png" alt="Connecticut Network"></a></li>
+                <li><a href="/osh/"><img src="/basin/img/ico/osh30.png" alt="Connecticut's Old State House"></a></li>
+                <li><a href="//ct.gov"><img src="/basin/assets/img/icons/CT-Blue-Icon.webp" alt="State of Connecticut Website"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<div class="hide-for-touch">
+    <a id="scroll-to-top" class="gotop scrollie hide-for-touch" href="#target">
+        <img src="/basin/img/ico/back-to-top2.png" alt="back to top"></a>
+</div>
+
+<!--LOADING MODAL-THIS IS NECESSARY-->
+<!--2/26 temp removed for testing-->
+<!-- <div id="domMessage" style="display:none;">
+  <h1>We are processing your request. Please be patient.</h1>
+</div>
+-->
+
+<!-- Fixed Bill Search button -->
+<button type="button" id="qs-toggle" class="qs-toggle" aria-controls="qs-slider" aria-expanded="false">
+  <i class="fi-magnifying-glass" aria-hidden="true"></i>
+  <span>Bill Search</span>
+</button>
+
+<!-- Slide-up panel Bill Search -->
+
+
+
+<aside id="qs-slider" class="qs-slider hide-for-print" role="region" aria-label="Quick Bill Search" hidden>
+  <div class="qs-slider-inner" role="document">
+    <div class="row qs-head">
+      <div class="small-6 medium-6 end columns">
+        <a href="/webapps/CGAQuickSearch.asp">
+          <img src="/basin/img/ico/quicksearchicon_fast.png" alt="Quick Bill Search">
+          <span class="hide-for-small">Quick </span>Bill Search
+        </a>
+      </div>
+
+      <div class="small-6 medium-6 end columns text-right close-hover" style="padding-right: 0;">
+        <a href="/webapps/CGAQuickSearch.asp" id="bslink">
+          <i class="fi-widget show-for-touch mr10" title="Add to home screen" aria-hidden="true"></i>
+          <span class="show-for-sr">Add to home screen</span>
+        </a>
+        <button type="button" id="qs-close" class="qs-close" aria-label="Close quick bill search">×</button>
+      </div>
+    </div>
+
+
+
+    <form id="frmCGAQuick1" name="frmCGAQuick1" method="get" action="/asp/cgabillstatus/cgabillstatus.asp">
+      <div class="form-horizontal">
+        <div class="row collapse">
+          <div class="small-3 columns">
+            <label class="show-for-sr" for="selBillType">Bill type</label>
+            <select name="selBillType" id="selBillType" onchange="createdropcookie();">
+                <option value="Bill">Bill</option>
+                <option value="House Cal">House Cal</option>
+                <option value="Senate Cal">Senate Cal</option>
+                <option value="File Copy">File Copy</option>
+                <option value="LCO">LCO</option>
+                <option value="Public Act">Public Act</option>
+                <option value="Special Act">Special Act</option>
+                <option value="Resolution Act">Resolution Act</option>
+            </select>
+          </div>
+
+          <div class="small-3 columns">
+            <label class="show-for-sr" for="which_year">Year</label>
+            <select id="which_year" name="which_year">
+            <option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option>
+            </select>
+          </div>
+
+          <div class="small-1 columns align-middle">
+            <span class="prefix" aria-hidden="true">No.</span>
+            <span class="show-for-sr">Bill number</span>
+          </div>
+
+          <div class="small-3 columns">
+            <label class="show-for-sr" for="bill_num">Bill number</label>
+            <input autocomplete="off" autocorrect="off" id="bill_num" name="bill_num" type="text" class="form-control" value="">
+          </div>
+
+          <div class="small-2 columns">
+            <button type="submit" class="qs-button postfix">Go</button>
+            <input type="hidden" id="qs" value="qs">
+          </div>
+        </div>
+      </div>
+    </form> 
+  </div>
+</aside>
+
+<script>
+(function () {
+  const COOKIE_NAME = 'qs_bills_open';
+  const COOKIE_DAYS = 180;
+
+  const toggle = document.getElementById('qs-toggle');
+  const panel  = document.getElementById('qs-slider');
+  const close  = document.getElementById('qs-close');
+
+  const openers = document.querySelectorAll('.js-open-qs-slider');
+
+  if (!toggle || !panel) return;
+
+  let lastFocus = null;
+
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = name + '=' + encodeURIComponent(value) +
+      '; expires=' + d.toUTCString() +
+      '; path=/; SameSite=Lax';
+  }
+
+  function getCookie(name) {
+    const target = name + '=';
+    const parts = document.cookie.split(';');
+    for (let i = 0; i < parts.length; i++) {
+      const c = parts[i].trim();
+      if (c.indexOf(target) === 0) return decodeURIComponent(c.substring(target.length));
+    }
+    return null;
+  }
+
+  function getFocusable(container) {
+    return Array.from(
+      container.querySelectorAll(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )
+    ).filter(el => el.offsetParent !== null);
+  }
+
+  function openPanel(userInitiated) {
+    if (panel.hidden) panel.hidden = false;
+    requestAnimationFrame(() => panel.classList.add('is-open'));
+
+    toggle.setAttribute('aria-expanded', 'true');
+
+    if (userInitiated) {
+      lastFocus = document.activeElement;
+      const focusables = getFocusable(panel);
+      if (focusables.length) focusables[0].focus();
+      else {
+        panel.setAttribute('tabindex', '-1');
+        panel.focus();
+      }
+    }
+
+    setCookie(COOKIE_NAME, '1', COOKIE_DAYS);
+    document.addEventListener('keydown', onKeyDown, true);
+  }
+
+  function closePanel() {
+    panel.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    setCookie(COOKIE_NAME, '0', COOKIE_DAYS);
+
+    document.removeEventListener('keydown', onKeyDown, true);
+
+    window.setTimeout(() => {
+      panel.hidden = true;
+      if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+    }, 180);
+  }
+
+  function onKeyDown(e) {
+    if (e.key === 'Escape' && !panel.hidden) {
+      e.preventDefault();
+      closePanel();
+    }
+  }
+
+  // Toggle click (existing)
+  toggle.addEventListener('click', function () {
+    if (typeof window.capturetheclick === 'function') window.capturetheclick();
+
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    if (expanded) closePanel();
+    else openPanel(true);
+  });
+
+  // Close button
+  if (close) close.addEventListener('click', closePanel);
+
+  // Additional openers
+  openers.forEach(el => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (typeof window.capturetheclick === 'function') window.capturetheclick();
+      openPanel(true);
+    });
+  });
+
+  // Restore state on load
+  const saved = getCookie(COOKIE_NAME);
+  if (saved === '1') openPanel(false);
+})();
+</script>
+
+
+
+<!-- MAIN MENU SCRIPT --> 
+<style>
+    ul li a:hover {
+        text-decoration: none !important;
+    }
+</style>
+
+<!--Foundation-->
+<script src="/basin/js/foundation.min.js?v=1"></script>
+<script src="/basin/js/foundation/foundation.topbar.js?v=1"></script>
+<script src="/basin/js/foundation/foundation.accordion.js?v=1"></script>
+<script src="/basin/js/foundation/foundation.dropdown.js?v=1"></script>
+<script src="/basin/js/foundation/foundation.tooltip.js?v=1"></script>
+<script src="/basin/js/foundation/foundation.reveal.js?v=1"></script>
+<script src="/basin/js/init.js?v=1"></script>
+<script>
+    $(document).foundation();
+</script>
+
+<script>
+//Scroll to top
+$(function () {
+    $(".scrollie").click(function () {
+        $("html,body").animate({ scrollTop: $("#target").offset().top }, "1000");
+        return false
+    }) 
+})
+
+//Update document title if set on page
+jQuery(document).ready(function () {
+    const titleTag = document.getElementById("pageTitleTag");
+    const subTitleTag = document.getElementById("subTitleTag");
+
+    if(titleTag) {
+        document.title = `${titleTag.textContent} - ${document.title}`;
+    }
+    if(subTitleTag) {
+        document.title = `${subTitleTag.textContent} - ${document.title}`;
+    }
+});
+
+//Date-Time Script
+jQuery(document).ready(function () {
+//  $("body").jquery.reject();
+    $().jetmenu();
+    GetClock();
+});
+window.onbeforeunload = function () {
+    // This fucntion does nothing. It will ensure that the page is not cached by the browser.
+    //solves the missing My Job tab problem
+}
+tday  =new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+tzOffset = -4;//set this to the number of hours offset from UTC - EST is - 5, EST Daylight Savings is -4
+
+d = new Date();
+dx = d.toGMTString();
+dx = dx.substr(0,dx.length -4);
+d.setTime(Date.parse(dx))
+d.setHours(d.getHours() + tzOffset);
+nday   = d.getDay();
+nmonth = d.getMonth();
+ndate  = d.getDate();
+nyear = d.getYear();
+if(nyear<1000) nyear=nyear+1900;
+
+$(".clockbox").html(""+tday[nday]+",&nbsp; "+tmonth[nmonth]+" "+ndate+", "+nyear+"");
+$(".clockbox").css("color:red");
+/*document.getElementById('clockbox').innerHTML=*/
+setTimeout("GetClock()", 1000);
+}
+//window.onload=GetClock;
+
+// LOADING GIF FOR SUBMIT BTN / Add submitButton class to <button> or <a>
+$(function() {
+    $(".submitButton").click(function() {
+    $("i", this).attr("class", "icon-refresh icon-spin");
+    setTimeout(function() { $(".submitButton i").attr("class", "fa fa-search"); }, 4000);
+    });
+});
+
+//Page load gif
+$(window).load(function() {
+// Animate loader off screen
+$(".se-pre-con").fadeIn("fast").fadeOut("1000");
+});
+</script> 
+</body>
+</html>
