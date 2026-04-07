@@ -31,7 +31,7 @@
 
   <!--FULLCALENDAR-->
   <script src='/basin/fullcalendar/fullcalendar.js?v=1'></script>
-  <script src='/basin/fullcalendar/cgacal.js?v=42809.6'></script>
+  <script src='/basin/fullcalendar/cgacal.js?v=40672.27'></script>
   <script src="/basin/js/vendor/jquery-ui.js?v=1"></script>
 
   <!--LOADING GIF FOR SUBMIT BTN / Add submitButton class to <button> or <a>-->   
